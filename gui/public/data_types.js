@@ -71,10 +71,6 @@ function Time( timeStr ) {
   // Utility functions.
   // Add zero in front of time digits. Always returns a string.
   this.doubleDigit = function( timeVal ) {
-<<<<<<< HEAD
     return timeVal < 10 ? "0" + timeVal : "" + timeVal;
-=======
-    return timeVal < 10 ? "0" + timeVal : timeVal;
->>>>>>> 7ed7e0344985fee8fe84bd58a53e3844beabe86c
   }
 }

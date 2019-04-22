@@ -3,7 +3,7 @@
  * It can also convert from non-Box Farm types.
  * Has no external dependencies.
  * @projectname Box Farm GUI
- * @version 0.5
+ * @version 0.5.3
  * @author Control Subsystem
  * @copyright 2018-2019
  */

@@ -2,7 +2,7 @@
  * @file Place for interface controls and logic.
  * Can directly manipulate webpages.
  * @projectname Box Farm GUI
- * @version 0.5
+ * @version 0.5.4
  * @author Control Subsystem
  * @copyright 2018-2019
  */
@@ -25,6 +25,9 @@ function InputTimeDropdown( container, type, timeObj ) {
   var STEP_MM = 5;
   var N_SS = 60;
   var STEP_SS = 5;
+  
+  // States.
+  var isEnabled = true;
   
   // Check if the container is not for the dropdown. Make sure this is specified first.
   if( container.classList[ 0 ] !== "dropdown" ) {
@@ -163,6 +166,40 @@ function InputTimeDropdown( container, type, timeObj ) {
 
   // Set the time based on which menu entry is clicked.
   menu.addEventListener( "mouseup", selectAction );
+  
+  /**
+   * Show if the dropdown is usable.
+   * @method isEnabled
+   * @memberof InputTimeDropdown
+   * @instance
+   */
+  this.isEnabled = function() {
+    return isEnabled;
+  };
+  
+  /**
+   * Make the dropdown look and be unclickable.
+   * @method disable
+   * @memberof InputTimeDropdown
+   * @instance
+   */
+  this.disable = function() {
+    face.setAttribute( "disabled", "" );
+    
+    isEnabled = false;
+  };
+  
+  /**
+   * Make the dropdown look and be clickable.
+   * @method enable
+   * @memberof InputTimeDropdown
+   * @instance
+   */
+  this.enable = function() {
+    face.removeAttribute( "disabled" );
+    
+    isEnabled = true;
+  };
   
   /**
    * Add the dropdown to the container element. It is recommended to call this along with 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Install dependencies as NodeJS modules instead. -->
+  <!-- Store dependencies locally instead. -->
 
   <!-- Using jQuery 3. -->
   <script
@@ -47,65 +47,15 @@
 	  </div>
 	  
     <div class="content-spacing">
-      <!-- Pump controls. -->
-      <div class="row">
-        <div class="col-3 text-left content">
-          <h5>PUMPS</h5>
-        </div>
-        <div id="pump-time-input" class="col-9 text-right content">
-          <div class="row">
-            <div class="col-6">
+      <div class="control-section">
+        <!-- Pump controls. -->
+        <div class="row">
+          <div class="col-3 text-left content">
+            <h5>PUMPS</h5>
           </div>
-          <div class="col-3">
-            <h5>HR</h5>
-          </div>
-          <div class="col-3">
-            <h5>MIN</h5>
-          </div>
-         </div>
-        <div id="pump-time-start" class="row dropdown-vertical">
-          <div class="col-6">
-          <h5>ON</h5>
-        </div>
-          <div class="col-3">
-            <div class="dropdown dropdown-horizontal">
-              <!-- Dropdown created by script. -->
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="dropdown dropdown-horizontal">
-              <!-- Dropdown created by script. -->
-            </div>
-          </div>
-        </div>
-        <div id="pump-time-end" class="row dropdown-vertical">
-            <div class="col-6">
-              <h5>OFF</h5>
-            </div>
-            <div class="col-3">
-              <div class="dropdown dropdown-horizontal">
-                <!-- Dropdown created by script. -->
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="dropdown dropdown-horizontal">
-                <!-- Dropdown created by script. -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="horizontal-bar"></div>
-      
-      <!-- Grow light controls. -->
-      <div class="row">
-        <div class="col-3 text-left content">
-          <h5>LIGHT</h5>
-        </div>
-        <div id="light-time-input" class="col-9 text-right content">
-          <div class="row">
-            <div class="col-6">
+          <div id="pump-time-input" class="col-9 text-right content">
+            <div class="row">
+              <div class="col-6">
             </div>
             <div class="col-3">
               <h5>HR</h5>
@@ -113,34 +63,88 @@
             <div class="col-3">
               <h5>MIN</h5>
             </div>
-          </div>
-          <div id="light-time-start" class="row dropdown-vertical">
+           </div>
+          <div id="pump-time-start" class="row dropdown-vertical">
             <div class="col-6">
-              <h5>ON</h5>
-            </div>
+            <h5>ON</h5>
+          </div>
             <div class="col-3">
               <div class="dropdown dropdown-horizontal">
-                <!-- Dropdown created by ui_logic. -->
+                <!-- Dropdown created by script. -->
               </div>
             </div>
             <div class="col-3">
               <div class="dropdown dropdown-horizontal">
-                <!-- Dropdown created by ui_logic. -->
+                <!-- Dropdown created by script. -->
               </div>
             </div>
           </div>
-          <div id="light-time-end" class="row dropdown-vertical">
-            <div class="col-6">
-              <h5>OFF</h5>
-            </div>
-            <div class="col-3">
-              <div class="dropdown dropdown-horizontal">
-                <!-- Dropdown created by ui_logic. -->
+          <div id="pump-time-end" class="row dropdown-vertical">
+              <div class="col-6">
+                <h5>OFF</h5>
+              </div>
+              <div class="col-3">
+                <div class="dropdown dropdown-horizontal">
+                  <!-- Dropdown created by script. -->
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="dropdown dropdown-horizontal">
+                  <!-- Dropdown created by script. -->
+                </div>
               </div>
             </div>
-            <div class="col-3">
-              <div class="dropdown dropdown-horizontal">
-                <!-- Dropdown created by ui_logic. -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="control-section">
+        <!-- Grow light controls. -->
+        <div class="row">
+          <div class="col-3 text-left content">
+            <h5>LIGHT</h5>
+          </div>
+          <div id="light-time-input" class="col-9 text-right content">
+            <div class="control-container">
+              <div class="row">
+                <div class="col-6">
+                </div>
+                <div class="col-3">
+                  <h5>HR</h5>
+                </div>
+                <div class="col-3">
+                  <h5>MIN</h5>
+                </div>
+              </div>
+              <div id="light-time-start" class="row dropdown-vertical">
+                <div class="col-6">
+                  <h5>ON</h5>
+                </div>
+                <div class="col-3">
+                  <div class="dropdown dropdown-horizontal">
+                    <!-- Dropdown created by ui_logic. -->
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="dropdown dropdown-horizontal">
+                    <!-- Dropdown created by ui_logic. -->
+                  </div>
+                </div>
+              </div>
+              <div id="light-time-end" class="row dropdown-vertical">
+                <div class="col-6">
+                  <h5>OFF</h5>
+                </div>
+                <div class="col-3">
+                  <div class="dropdown dropdown-horizontal">
+                    <!-- Dropdown created by ui_logic. -->
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="dropdown dropdown-horizontal">
+                    <!-- Dropdown created by ui_logic. -->
+                  </div>
+                </div>
               </div>
             </div>
           </div>
